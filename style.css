@@ -1,128 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: hsl(30, 38%, 92%);
-    font-size: 14px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .container {
-    margin: 30px auto;
-    padding: 0 30px;
+  margin: 30px auto;
+  padding: 0 30px;
 }
 
 .grid {
-    max-width: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.img img {
-    max-width: 100%;
-    display: inherit;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+  overflow: hidden;
 }
 
 .card-content {
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-h6.pro-cat {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 13px;
-    color: hsl(228, 12%, 48%);
-    font-weight: 500;
-}
-
-h2.pro-name {
-    font-family: 'Fraunces', serif;
-    font-size: 34px;
-    line-height: 1em;
-}
-
-p.pro-des {
-    color: hsl(228, 12%, 48%);
-    line-height: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px;
 }
 
 .price {
-    display: flex;
-    align-items: center;
+  align-items: center;
+  display: flex;
+}
+
+h2.pro-name {
+  font-family: "Fraunces", serif;
+  font-size: 34px;
+  line-height: 1em;
+}
+
+h6.pro-cat {
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p.pro-des {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6em;
 }
 
 p.current-price {
-    font-family: 'Fraunces', serif;
-    color: hsl(158, 36%, 37%);
-    font-size: 25px;
-    padding-right:25px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  padding-right: 25px;
 }
 
 p.old-price {
-    color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.img img {
+  max-width: 100%;
+  display: inherit;
 }
 
 button.cta {
-    background-color: hsl(158, 36%, 37%);
-    border: none;
-    padding: 12px 0;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    transition:  background-color .3 ease;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 0;
+  transition: background-color 0.3 ease;
 }
 
 button.cta:hover {
-    background-color: hsl(158, 36%, 23%);
+  background-color: hsl(158, 36%, 23%);
 }
 
 button.cta img {
-    padding-right: 7px;
+  padding-right: 7px;
 }
 
 @media screen and (max-width: 628px) {
-    .container {
-        margin: 15px auto;
-        padding: 0 15px;
-    }
+  .container {
+    margin: 15px auto;
+    padding: 0 15px;
+  }
 
-    .img img {
-        max-height: 290px;
-    }
+  .img img {
+    max-height: 290px;
+  }
 
-    .card-content {
-        padding: 24px;
-    }
+  .card-content {
+    padding: 24px;
+  }
 
-    h6.pro-cat, h2.pro-name, p.pro-des, .price {
-        padding-bottom: 16px;
-    }
+  h2.pro-name,
+  h6.pro-cat,
+  p.pro-des,
+  .price {
+    padding-bottom: 16px;
+  }
 
-    p.pro-des {
-        font-size: 12px;
-    }
+  p.pro-des {
+    font-size: 12px;
+  }
 
-    p.current-price {
-        font-size: 23px;
-    }
+  p.current-price {
+    font-size: 23px;
+  }
 
-    button.cta {
-        padding: 12px 0;
-        font-size: 13px;
-    }
+  button.cta {
+    padding: 12px 0;
+    font-size: 13px;
+  }
 }
